@@ -97,25 +97,39 @@
     
     <style>
         header {
-            background-image: url('fondo-huenchullan.jpg'); /* Cambia por el nombre de tu imagen */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: white;
-            text-align: center;
-            height: 100vh; /* Altura completa del viewport */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* oscurece la imagen para que el texto resalte */
+        background-image: url('fondo-huenchullan.jpg'); /* Cambia por el nombre real */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Ajuste para móviles */
+    @media (max-width: 768px) {
+        header {
+            background-attachment: scroll; /* para evitar errores en móviles */
+            background-position: top;
+            height: 70vh; /* menos altura para que no se vea cortado */
+            padding: 3rem 1rem;
         }
     
-        header h1,
-        header p {
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        header h1 {
+            font-size: 1.8rem;
         }
+    
+        header p {
+            font-size: 1rem;
+        }
+    }
     </style>
     
     
